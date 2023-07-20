@@ -11,24 +11,19 @@ const StyledPanel = styled.div`
         display:block;
     }
 `
-
 const StyledButton = styled.button`
     &.hide-btn{
         display:none;
     }
 `
-
 const Span = styled.span`
     font-weight: bold;
 `
-
 const Character = props => {
     const [isExpanded,setExpanded] = useState(false);
-
     const toggleClass = () => {
         setExpanded(!isExpanded);
     };
-
     return(
         <div className="panel">
             <div className="panel-bar">
@@ -54,5 +49,4 @@ const Character = props => {
         </div>
     );
 };
-
 export default Character;
